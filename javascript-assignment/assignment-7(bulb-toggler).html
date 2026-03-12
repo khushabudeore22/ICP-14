@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Toggler</title>
+    <style>
+        body{
+            background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+            min-height: 100vh;
+        }
+        .heading{
+            text-align: center;
+            color:#2268b8 ;
+        }
+        .bulb-container{
+            width: fit-content;
+            border: 1px solid black;
+            margin: 25px auto;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .bulb-img{
+            height: 170px;
+            margin: 20px;
+        }
+        .btn{
+            border: none;
+            min-width: 70px;
+            border-radius: 40px;
+            padding: 3px 20px;
+            cursor: pointer; 
+            color: white;
+
+        }
+        .btn-on{
+            background-color: #68dd66;     
+        }
+        .btn-off{
+            background-color: #d96969;
+        }
+        .btn-container{
+            display: flex;
+            justify-content: space-around;
+            margin: 10px auto;
+        }
+      
+    </style>
+</head>
+<body>
+    <h1 class="heading">Bulb Toggler</h1>
+
+    <div class="bulb-container">
+        <img src="bulb-off.png" class="bulb-img" id="bulb"/>
+        <div class="btn-container">
+            
+            <button class="btn btn-on" onclick="switchBulb()" id="btn-toggle">Toggle</button>
+          
+        </div>
+    </div>
+
+    <script>
+         const bulbElement = document.getElementById("bulb");
+        const btnToggle = document.getElementById("btn-toggle");
+
+        function switchBulb(state){
+            if(bulbElement.src.includes("bulb-on.png")){
+
+                bulbElement.src = "bulb-off.png";
+                btnToggle.className = "btn btn-on";
+            }else{
+                bulbElement.src = "bulb-on.png";
+                btnToggle.className = "btn btn-off";
+            }
+        }
+    </script>   
+</body>
+</html>

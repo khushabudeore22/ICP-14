@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Tag</title>
+</head>
+<body>
+    <form>
+        <h1>Date & Time:</h1>
+        Date:<input type="date" /><br /><br />
+        Time:<input type="time" />
+        <hr />
+
+        <h1>Dropdown</h1>
+        Choose language:
+        <select>
+            <option>Choose Languages:</option>
+            <option>html</option>
+            <option>CSS</option>
+            <option>Javascript</option>
+        </select>
+        <hr />
+
+        <h1>Value Attribute</h1>
+        <label for="MotherToung">Mother Toung:</label>
+        <input type="text" value="Marathi" id="MotherToung" />
+        <hr />
+    </form>
+
+    <form>
+        <h1>DataList</h1>
+        <input list="Languages"/>
+        <datalist id="Languages">
+            <option>Choose Technology:</option>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>Javascript</option>
+            <option>MongoDB</option>
+            <option>ExpressJS</option>
+            <option>ReactJs</option>
+            <option>NodeJs</option>
+        </datalist><hr/>
+    </form>
+
+    <form>
+        <h1>File Atrribute:-</h1>
+        <h3>1)image/* = image files</h3>
+        <label for="imageinput">Upload All Types Of Images:</label>
+        <input type="file" id="imageinput" accept="image/*"/><br/><br/>
+
+        <h3>2)audio/* = audio files</h3>
+        <label for="audioinput">Upload All Types Of Audio:</label>
+        <input type="file" id="audioinput" accept="Audio/*"/><br/><br/>
+
+        <h3>3)application/* = application files</h3>
+        <label for="appinput">Upload All Types Of Application:</label>
+        <input type="file" id="appinput" accept="Audio/*"/><br/><br/>
+
+        <h3>4)video/* = video files</h3>
+        <label for="videoinput">Upload AL Types of Videos</label>
+        <input type="file" id="videoinput" accept="video/*"/><br/><br/>
+
+        <h3>5)image/png = png images:</h3>
+        <label for="pnginput">Upload Png Type Of Images:</label>
+        <input type="file" id="pnginput" accept="image/png"/><br/><br/><hr/>
+    </form>
+</body>
+</html

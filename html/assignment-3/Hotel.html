@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hotel Booking Form</title>
+</head>
+
+<body>
+    <form>
+        <h1><u><b>Hotel Booking </b></u></h1>
+
+        <label>Full Name</label><br />
+        <input type="text" id="FirstName" placeholder="Enter First Name" required />
+        <input type="text" id="LastName" placeholder="Enter Last Name" required /><br /><br />
+
+        <label for="email">Email-Id</label><br />
+        <input type="email" id="email" placeholder="Enter Email-Id" required /><br /><br />
+
+        <label for="mobileno">Mobile No</label><br />
+        <input type="text" id="mobileno" placeholder="Enter Mobile No" required /><br /><br />
+
+        <label>Room Type</label><br />
+        <select required>
+            <option>Please Select:</option>
+            <option>Standard Room(1 to 2 People)</option>
+            <option>Family Room(1 to 4 People)</option>
+            <option>Private Room(1 to 3 People)</option>
+        </select><br /><br />
+
+        <label>Select Special Facility:</label><br />
+        <input type="checkbox" id="wifi" name="amenities[]" value="wifi">
+        <label for="wifi">Free Wi-Fi</label><br>
+
+        <input type="checkbox" id="pool" name="amenities[]" value="pool">
+        <label for="pool">Swimming Pool Access</label><br>
+
+        <input type="checkbox" id="breakfast" name="amenities[]" value="breakfast">
+        <label for="breakfast">Complimentary Breakfast</label><br>
+
+        <input type="checkbox" id="parking" name="amenities[]" value="parking">
+        <label for="parking">Free Parking</label><br><br>
+
+        <label>Check-In Date And Time</label><br />
+        <input type="date" id="CheckIn" placeholder="Check In Date" required />
+        <input type="time" id="CheckIntime" placeholder="Check In Time" required><br /><br />
+
+        <label>Check-Out Date And Time</label><br />
+        <input type="date" id="CheckOut" required />
+        <input type="time" id="CheckOuttime" required /><br /><br />
+
+        <label for="Requirement">Special Requirement</label><br />
+        <input type="text" id="Requirement" placeholder="If Any" /><br /><br />
+
+        <input type="submit" value="Book Now" />
+    </form>
+</body>
+
+</html>
