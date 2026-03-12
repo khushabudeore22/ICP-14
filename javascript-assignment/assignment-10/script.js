@@ -1,15 +1,19 @@
-let todos = JSON.parse(localStorage.getItem("todos")) || []
+function displayTodos(){
 
-function addTodo(){
+const list=document.getElementById("todoList")
 
-const input=document.getElementById("todoInput")
+list.innerHTML=""
 
-todos.push(input.value)
+todos.forEach(function(todo){
 
-localStorage.setItem("todos",JSON.stringify(todos))
+let li=document.createElement("li")
 
-displayTodos()
+li.textContent=todo
 
-input.value=""
+list.appendChild(li)
+
+})
 
 }
+
+displayTodos()
