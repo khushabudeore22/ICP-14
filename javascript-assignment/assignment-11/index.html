@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pinhole Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 class="logo">Pinhole</h1>
+
+<div class="gallery">
+
+    <div class="card">
+        <img src="https://picsum.photos/400/300?1" onclick="openPreview(this)">
+        <p>Crown Plaza Tampa</p>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/400/300?2" onclick="openPreview(this)">
+        <p>Toddlers</p>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/400/300?3" onclick="openPreview(this)">
+        <p>Young and Restless</p>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/400/300?4" onclick="openPreview(this)">
+        <p>Sweets for my event</p>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/400/300?5" onclick="openPreview(this)">
+        <p>Green Interiors</p>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/400/300?6" onclick="openPreview(this)">
+        <p>Over the Horizon</p>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/400/300?7" onclick="openPreview(this)">
+        <p>River Hills Golf Club</p>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/400/300?8" onclick="openPreview(this)">
+        <p>Childhood Adventures</p>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/400/300?9" onclick="openPreview(this)">
+        <p>Natural Beauty</p>
+    </div>
+
+</div>
+
+<!-- Image Preview Modal -->
+
+<div id="imagePreview" class="preview">
+    <span class="close" onclick="closePreview()">×</span>
+    <img id="previewImg">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
