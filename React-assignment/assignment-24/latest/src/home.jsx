@@ -1,9 +1,12 @@
-function home(){
-    return <div>
-        <h1>Welcome to Home Page</h1>
-        <a href="./about">About Us</a><br/>
-        <a href="./contact">Contact Us</a><br/>
-    </div>
+import React from "react";
 
+function Home() {
+  return (
+    <div>
+      <h2>Home Page</h2>
+      <p>Welcome to our website!</p>
+    </div>
+  );
 }
-export default home;
+
+export default Home;

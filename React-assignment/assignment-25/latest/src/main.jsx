@@ -1,17 +1,9 @@
-import { createRoot } from "react-dom/client";
-import Contact from "./contact";
-import Home from "./home";
-import About from "./about";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
 
-const root = createRoot(document.getElementById("root"));
-
-const pathname = window.location.pathname;
-console.log("Current pathname:", pathname);
-
-if (pathname === "/") {
-  root.render(<Home />);
-} else if (pathname === "/contact/") {
-  root.render(<Contact />);
-} else if (pathname === "/about") {
-  root.render(<About />);
-}
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);

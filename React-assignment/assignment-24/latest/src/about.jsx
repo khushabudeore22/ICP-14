@@ -1,8 +1,12 @@
-function about(){
-    return <div>
-        <h1>About Us</h1>
-        <a href="./">Home</a><br/>
-        <a href="./contact">Contact Us</a><br/>
+import React from "react";
+
+function About() {
+  return (
+    <div>
+      <h2>About Page</h2>
+      <p>This application demonstrates custom routing using JavaScript.</p>
     </div>
+  );
 }
-export default about;
+
+export default About;
