@@ -1,9 +1,23 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+import Navbar from "./pages/Navbar";
+import Home from "./pages/home";
+import About from "./pages/about";
+import Contact from "./pages/contact";
+
+const root = createRoot(document.getElementById("root"));
+
+root.render(
+  <BrowserRouter>
+
+    <Navbar />   
+
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
+
+  </BrowserRouter>
 );

@@ -1,13 +1,8 @@
 function Home() {
-  const style = {
-    textAlign: "center",
-    marginTop: "50px"
-  };
-
   return (
-    <div style={style}>
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
       <h1 style={{ color: "blue" }}>Home Page</h1>
-      <p>Welcome to our E-learning Portal 🚀</p>
+      <p>Welcome to our website 🚀</p>
     </div>
   );
 }

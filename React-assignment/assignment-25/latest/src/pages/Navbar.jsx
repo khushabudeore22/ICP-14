@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const navStyle = {
-    padding: "15px",
     backgroundColor: "#222",
+    padding: "15px",
     textAlign: "center"
   };
 
@@ -11,8 +11,8 @@ function Navbar() {
     color: "white",
     margin: "15px",
     textDecoration: "none",
-    fontWeight: "bold",
-    fontSize: "18px"
+    fontSize: "18px",
+    fontWeight: "bold"
   };
 
   return (
