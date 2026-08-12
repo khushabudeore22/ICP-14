@@ -1,0 +1,19 @@
+/* Flowers.css */
+.flowers-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.flowers-header h1 {
+  margin-bottom: 5px;
+  font-size: 28px;
+}
+
+.flowers-header p {
+  color: #666;
+}
+
+.no-results {
+  margin-top: 30px;
+  color: #888;
+}
