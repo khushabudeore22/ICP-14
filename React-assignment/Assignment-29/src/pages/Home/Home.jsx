@@ -3,7 +3,7 @@ import flowers from '../../data';
 import FlowerCard from '../../components/FlowerCard/FlowerCard';
 import './Home.css';
 
-function Home() {
+function Home({ onAddToCart }) {
     // Show top 3 featured flowers
     const featuredFlowers = flowers.slice(0, 3);
 
@@ -30,9 +30,11 @@ function Home() {
                     {featuredFlowers.map((flower) => (
                         <FlowerCard
                             key={flower.id}
+                            id={flower.id}
                             image={flower.image}
                             name={flower.name}
                             price={flower.price}
+                            onAddToCart={onAddToCart}
                         />
                     ))}
                 </div>

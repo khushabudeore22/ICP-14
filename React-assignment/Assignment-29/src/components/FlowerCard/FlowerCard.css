@@ -38,8 +38,13 @@
   cursor: pointer;
   font-size: 14px;
   font-weight: bold;
+  transition: background-color 0.2s ease;
 }
 
 .add-to-cart-button:hover {
   background-color: #c93d68;
+}
+
+.add-to-cart-button.added {
+  background-color: #28a745;
 }

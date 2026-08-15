@@ -4,7 +4,7 @@ import SearchBar from '../../components/SearchBar/SearchBar';
 import FlowerCard from '../../components/FlowerCard/FlowerCard';
 import './Flowers.css';
 
-function Flowers() {
+function Flowers({ onAddToCart }) {
     const [search, setsearch] = useState('');
 
     const filteredFlowers = flowers.filter((flower) =>
@@ -25,9 +25,11 @@ function Flowers() {
                     filteredFlowers.map((flower) => (
                         <FlowerCard
                             key={flower.id}
+                            id={flower.id}
                             image={flower.image}
                             name={flower.name}
                             price={flower.price}
+                            onAddToCart={onAddToCart}
                         />
                     ))
                 ) : (
